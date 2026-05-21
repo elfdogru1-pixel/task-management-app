@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EnterpriseFlow</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <h2>EnterpriseFlow</h2>
+    </div>
+
+    <div class="layout">
+
+        <div class="sidebar">
+
+            <h3>Menü</h3>
+
+            <ul>
+                <li>Dashboard</li>
+                <li>Görevler</li>
+                <li>Çalışanlar</li>
+                <li>Raporlar</li>
+            </ul>
+
+        </div>
+
+        <div class="main-content">
+
+            <div class="container">
+
+                <div class="welcome">
+
+                    <h2>Hoş Geldin, Elif 👋</h2>
+
+                    <p>Bugünkü görev ve performans durumunu görüntüleyebilirsin.</p>
+
+                </div>
+
+                <h1>EnterpriseFlow</h1>
+
+                <p>Kurumsal Süreç Yönetim Platformu</p>
+
+                <button>Panele Giriş Yap</button>
+
+                <div class="cards">
+
+                    <div class="card">
+                        <h2>Toplam Görev</h2>
+                        <p>128 Görev</p>
+                    </div>
+
+                    <div class="card">
+                        <h2>Tamamlanan Görev</h2>
+                        <p>94 Görev</p>
+                    </div>
+
+                    <div class="card">
+                        <h2>Geciken Görev</h2>
+                        <p>12 Görev</p>
+                    </div>
+
+                </div>
+
+                <div class="task-form">
+
+                    <h2>Yeni Görev Oluştur</h2>
+
+                    <input type="text" id="taskName" placeholder="Görev adı">
+
+                    <input type="text" id="departmentName" placeholder="Departman">
+
+                    <select id="taskStatus">
+                        <option value="Yeni">Yeni</option>
+                        <option value="Devam Ediyor">Devam Ediyor</option>
+                        <option value="Tamamlandı">Tamamlandı</option>
+                        <option value="Gecikti">Gecikti</option>
+                    </select>
+
+                    <button onclick="addTask()">Görev Ekle</button>
+
+                </div>
+
+                <div class="tasks">
+
+                    <h2>Son Görevler</h2>
+
+                    <table id="taskTable">
+
+                        <tr>
+                            <th>Görev</th>
+                            <th>Departman</th>
+                            <th>Durum</th>
+                            <th>İşlem</th>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
